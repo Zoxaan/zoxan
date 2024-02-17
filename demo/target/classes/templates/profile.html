@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Ma username</h2>
+<p th:text="${user.getUsername()}"></p></br>
+<h2>Ma roles</h2>
+<p th:text="${user.getAuthorities()}"></p></br>
+
+<form method="post" th:action="@{/logout}">
+    <input type="submit" value="Sign Out">
+</form>
+</body>
+</html>
